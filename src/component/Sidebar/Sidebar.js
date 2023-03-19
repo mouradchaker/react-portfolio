@@ -5,6 +5,12 @@ import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faGithub,
+  faLinkedin,
+  faSkype,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons'
 
 function Sidebar() {
   return (
@@ -40,7 +46,43 @@ function Sidebar() {
 
       <ul>
         <li>
-          <a></a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/chmourad/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/mouradchaker "
+          >
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/chmourad/"
+          >
+            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/chmourad/"
+          >
+            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+          </a>
         </li>
       </ul>
     </div>
