@@ -2,15 +2,19 @@ import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Contact.scss'
+import { useForm, ValidationError } from '@formspree/react'
 
 function Contact() {
-  const [letterClass, setLetterClass] = useState('text-animate')
-
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
+  const [letterClass, setLetterClass] = useState('text-animate')
+  const [state, handleSubmit] = useForm('mqkodwlb')
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>
+  }
 
   return (
     <>
@@ -30,7 +34,7 @@ function Contact() {
           </p>
 
           <div className="contact-form">
-            <form>
+            <form onSubmit={handleSubmit}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
@@ -40,8 +44,14 @@ function Contact() {
                   <input
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Email"
                     required
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
                   />
                 </li>
 
@@ -58,12 +68,46 @@ function Contact() {
                   <textarea
                     placeholder="Message"
                     name="message"
+                    id="message"
                     required
                   ></textarea>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
+                </li>
+
+                <li>
+                  <input
+                    type="submit"
+                    disabled={state.submitting}
+                    className="flat-button"
+                    value="SEND"
+                  />
                 </li>
               </ul>
             </form>
           </div>
+        </div>
+
+        <div className="info-map">
+          Mourad Chaker <br />
+          Algeria
+          <br />
+          Jijel , Centre Ville <br />
+          Email me and lets work together <br />
+          <span>mchaker@hotmail.fr</span>
+        </div>
+        <div className="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12777.079356413113!2d5.745822810620919!3d36.81205332212119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f2607c65da0e55%3A0xe6f33b21d29e2b20!2sCtre%20Ville%2C%20Jijel%2018000!5e0!3m2!1sfr!2sdz!4v1679701890865!5m2!1sfr!2sdz"
+            style={{ border: 0 }}
+            className="myMap"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
 
