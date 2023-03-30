@@ -4,6 +4,7 @@ import About from './component/About/About'
 import Contact from './component/Contact/Contact'
 import Home from './component/Home/Home'
 import Layout from './component/Layout/Layout'
+import Portfolio from './component/Portfolio/Portfolio'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
     </>
