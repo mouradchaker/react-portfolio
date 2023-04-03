@@ -6,6 +6,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
+  faGear,
   faHome,
   faSuitcase,
   faUser,
@@ -32,6 +33,10 @@ function Sidebar() {
 
         <NavLink activeclassname="active" className="about-link" to="/about">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+
+        <NavLink activeclassname="active" className="skills-link" to="/skills">
+          <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
         </NavLink>
 
         <NavLink
