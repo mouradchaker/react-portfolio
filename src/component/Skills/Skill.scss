@@ -4,12 +4,22 @@
 
 .skills-charts {
   position: absolute;
-  width: 80%;
-  right: -15%;
+  width: 100%;
+  right: -45%;
   left: auto;
   height: 100%;
-  top: 0;
+  top: 25%;
   bottom: 0;
   margin: auto;
+
   z-index: 2;
+}
+
+.text-zone {
+  p {
+    a {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+  }
 }

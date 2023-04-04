@@ -73,15 +73,15 @@ export const sphereItem = [
 ]
 
 export const optionsCanvas = {
-  textColour: '#FDBD28',
-  outlineColour: '#00000000',
+  textColour: '#FFF',
+  outlineColour: '#4d4d4e',
   reverse: true,
-  textFont: 'Helvetica Now Display',
+  textFont: 'Segoe UI',
   depth: 0.8,
-  zoom: 1.082,
-  textHeight: 9,
+  zoom: 1.15,
+  textHeight: 6,
   wheelZoom: true,
   decel: 1,
-  maxSpeed: 0.06,
+  maxSpeed: 0.05,
   initial: [0, 0.185],
 }

@@ -47,11 +47,7 @@ const Skills = () => {
 
         <p>
           Visit my
-          <a
-            onclick="ga('send', {'hitType': 'event', 'eventCategory': 'Skills Page', 'eventAction': 'Link Clicked', 'eventLabel': 'Linkedin profile' });"
-            target="_blank"
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
-          >
+          <a target="_blank" href="https://www.linkedin.com/in/chmourad/">
             LinkedIn{' '}
           </a>
           profile for more details. Also you can checkout my cv on this
@@ -70,6 +66,10 @@ const Skills = () => {
           </a>
           .
         </p>
+      </div>
+
+      <div className="skills-charts">
+        <SphereCanvas />
       </div>
     </div>
   )
