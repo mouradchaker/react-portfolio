@@ -112,3 +112,24 @@
     }
   }
 }
+
+@media screen and (max-width: 920px) {
+  .container.portfolio-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    .images-container {
+      display: block;
+      margin-left: 0;
+    }
+    h1.page-title {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .image-box {
+      margin-bottom: 50px;
+      height: 400px;
+      max-width: calc(100% - 0px);
+    }
+  }
+}

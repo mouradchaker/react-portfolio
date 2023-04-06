@@ -27,23 +27,38 @@ function Sidebar() {
     <div className="nav-bar">
       <Link className="logo" to="/">
         <img src={LogoS} alt="logo" />
-        <img src={LogoSubtitle} alt="logo" className="sub-logo" />
       </Link>
 
       <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          to="/"
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink activeclassname="active" className="about-link" to="/about">
+        <NavLink
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink activeclassname="active" className="skills-link" to="/skills">
+        <NavLink
+          activeclassname="active"
+          className="skills-link"
+          to="/skills"
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
         </NavLink>
 
         <NavLink
+          onClick={() => setShowNav(false)}
           activeclassname="active"
           className="portfolio-link"
           to="/portfolio"
@@ -52,6 +67,7 @@ function Sidebar() {
         </NavLink>
 
         <NavLink
+          onClick={() => setShowNav(false)}
           activeclassname="active"
           className="contact-link"
           to="/contact"
@@ -88,26 +104,6 @@ function Sidebar() {
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/chmourad/"
-          >
-            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/chmourad/"
-          >
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
-          </a>
-        </li>
       </ul>
 
       <FontAwesomeIcon
@@ -115,7 +111,7 @@ function Sidebar() {
         icon={faBars}
         color="#ffd700"
         size="3x"
-        className="hamburger-icon"
+        className={showNav ? 'disapper' : 'hamburger-icon'}
       />
     </div>
   )

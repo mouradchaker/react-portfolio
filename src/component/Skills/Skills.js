@@ -32,7 +32,7 @@ const Skills = () => {
             <span class="tech-tag">JavaScript</span>,
             <span class="tech-tag">jQuery</span>,
             <span class="tech-tag">Angular2</span>,
-            <span class="tech-tag">React</span>,
+            <span class="tech-tag">React</span>,<br />
             <span class="tech-tag">TypeScript</span>,
             <span class="tech-tag">Jasmine</span>,
             <span class="tech-tag">Bootstrap</span>,

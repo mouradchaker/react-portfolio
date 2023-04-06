@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Contact.scss'
 import { useForm, ValidationError } from '@formspree/react'
+import { toast } from 'react-hot-toast'
 
 function Contact() {
   useEffect(() => {
@@ -12,8 +13,20 @@ function Contact() {
   }, [])
   const [letterClass, setLetterClass] = useState('text-animate')
   const [state, handleSubmit] = useForm('mqkodwlb')
+
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>
+    toast.success('Email Sent', {
+      style: {
+        border: '1px solid #ffd700',
+        backgroundColor: '#115173',
+        padding: '16px',
+        color: '#ffd700',
+      },
+      iconTheme: {
+        primary: '#ffd700',
+        secondary: '#115173',
+      },
+    })
   }
 
   return (

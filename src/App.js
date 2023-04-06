@@ -6,10 +6,11 @@ import Home from './component/Home/Home'
 import Layout from './component/Layout/Layout'
 import Portfolio from './component/Portfolio/Portfolio'
 import Skills from './component/Skills/Skills'
-
+import toast, { Toaster } from 'react-hot-toast'
 function App() {
   return (
     <>
+      <Toaster position="bottom-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
