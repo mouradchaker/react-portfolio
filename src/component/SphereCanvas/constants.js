@@ -9,7 +9,7 @@ export const sphereItem = [
   },
   {
     href: 'https://fr.wikipedia.org/wiki/MongoDB',
-    title: 'MangoDB',
+    title: 'MongoDB',
   },
   {
     href: 'https://fr.reactjs.org/',
@@ -21,7 +21,7 @@ export const sphereItem = [
   },
 
   {
-    title: 'Prisma',
+    title: 'Mongoose',
     href: 'https://www.prisma.io/',
   },
   {
@@ -30,11 +30,11 @@ export const sphereItem = [
   },
   {
     href: 'https://fr.wikipedia.org/wiki/Python_(langage)',
-    title: 'Python',
+    title: 'Geist',
   },
   {
     href: 'https://fr.wikipedia.org/wiki/C_(langage)',
-    title: 'C',
+    title: 'Tailwind',
   },
   {
     href: 'https://www.w3schools.com/css/',
@@ -50,11 +50,11 @@ export const sphereItem = [
   },
   {
     href: 'https://fr.wikipedia.org/wiki/Redis',
-    title: 'Redis',
+    title: 'Redux',
   },
   {
     href: 'https://fr.wikipedia.org/wiki/SQL',
-    title: 'SQL',
+    title: 'MongoAtlas',
   },
 
   {
@@ -67,7 +67,7 @@ export const sphereItem = [
   },
 
   {
-    title: 'Docker',
+    title: 'Material UI',
     href: 'https://www.docker.com/',
   },
 ]

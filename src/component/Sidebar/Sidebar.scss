@@ -105,6 +105,11 @@
         color: #ffd700;
       }
     }
+
+    .linkedin,
+    .github {
+      visibility: hidden;
+    }
   }
 
   ul {
@@ -135,6 +140,7 @@
 .hamburger-icon,
 .close-icon {
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -144,11 +150,9 @@
     height: auto;
     min-height: auto;
 
-    /*
     ul {
-      display : none
+      display: none;
     }
-    */
 
     nav {
       width: 20%;
@@ -182,10 +186,36 @@
       &.mobile-show {
         right: 0;
       }
+
+      .linkedin {
+        visibility: visible;
+        font-size: 15px;
+        font-family: 'Helvetica Neue';
+        margin-top: 100px;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+
+      .github {
+        visibility: visible;
+        font-size: 15px;
+        font-family: 'Helvetica Neue';
+        margin-top: 100px;
+        position: absolute;
+        bottom: 5%;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
     }
+
     .disapper {
       display: none;
     }
+
     .hamburger-icon,
     .close-icon {
       position: absolute;

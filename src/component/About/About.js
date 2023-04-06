@@ -1,9 +1,12 @@
 import {
   faAngular,
+  faBootstrap,
   faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
+  faNode,
+  faNodeJs,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -51,10 +54,10 @@ function About() {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#dd0031" />
+              <FontAwesomeIcon icon={faNode} color="#215732" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#f06529" />
+              <FontAwesomeIcon icon={faBootstrap} color="#87229b" />
             </div>
             <div className="face3">
               <FontAwesomeIcon icon={faCss3} color="#28a4d9" />
@@ -72,7 +75,7 @@ function About() {
         </div>
       </div>
 
-      <Loader type="pacman" />
+      <Loader type="ball-scale-ripple-multiple" />
     </>
   )
 }

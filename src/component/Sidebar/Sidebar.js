@@ -82,6 +82,26 @@ function Sidebar() {
           size="3x"
           className="close-icon"
         />
+
+        <a
+          className="linkedin"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/chmourad/"
+        >
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          LinkedIn
+        </a>
+
+        <a
+          className="github"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/mouradchaker "
+        >
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          Github
+        </a>
       </nav>
 
       <ul>

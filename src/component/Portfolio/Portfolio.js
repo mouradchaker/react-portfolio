@@ -53,7 +53,7 @@ function Portfolio() {
         <div>{renderPortfolio(portfolioData.portfolio)}</div>
       </div>
 
-      <Loader type="pacman" />
+      <Loader type="ball-scale-ripple-multiple" />
     </>
   )
 }
