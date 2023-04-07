@@ -31,6 +31,13 @@ function Portfolio() {
                 <button className="btn" onClick={() => window.open(port.url)}>
                   View
                 </button>
+                <button
+                  style={{ marginLeft: '10px' }}
+                  className="btn"
+                  onClick={() => window.open(port.url2)}
+                >
+                  media
+                </button>
               </div>
             </div>
           )
