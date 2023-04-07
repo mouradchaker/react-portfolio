@@ -1,34 +1,34 @@
 {
   "portfolio": [
     {
-      "cover": "https://i.ibb.co/XVqZ3tt/gmail.png",
+      "cover": "https://i.ibb.co/592vzQF/elhadi.png",
       "title": "GGWP",
       "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
+      "url": "https://elhadiimmobilier.web.app/"
     },
     {
-      "cover": "https://i.ibb.co/XVqZ3tt/gmail.png",
+      "cover": "https://i.ibb.co/S5Mrf38/easy-touch.png",
       "title": "GGWP",
       "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
+      "url": "https://easytouchdz.web.app/"
     },
     {
-      "cover": "https://i.ibb.co/XVqZ3tt/gmail.png",
+      "cover": "https://i.ibb.co/5F9Hkst/lihcene.png",
       "title": "GGWP",
       "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
+      "url": "https://lihcene.web.app/"
     },
     {
-      "cover": "https://i.ibb.co/XVqZ3tt/gmail.png",
+      "cover": "https://i.ibb.co/WHFyHw7/protech.png",
       "title": "GGWP",
       "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
+      "url": "https://protech-blog.vercel.app/"
     },
     {
-      "cover": "https://i.ibb.co/XVqZ3tt/gmail.png",
+      "cover": "https://i.ibb.co/Fn7qJbZ/elchaghef.png",
       "title": "GGWP",
       "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
+      "url": "https://elchagef.web.app/"
     }
   ]
 }
