@@ -35,6 +35,13 @@
       "description": "React, JSX, Tailwind, Jest",
       "url": "https://elchagef.web.app/",
       "url2": "https://www.facebook.com/idichild"
+    },
+    {
+      "cover": "https://i.ibb.co/LvskGcr/7.png",
+      "title": "La Plume",
+      "description": "React, JSX, Tailwind, Jest",
+      "url": "https://laplume.vercel.app/",
+      "url2": "https://www.facebook.com/idichild"
     }
   ]
 }
